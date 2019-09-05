@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Onboarding Controller-->
         <scene sceneID="yix-7g-Ui8">
             <objects>
-                <viewController id="wSS-Rd-cjr" customClass="ViewController" customModule="Analyzar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wSS-Rd-cjr" userLabel="Onboarding Controller" customClass="ViewController" customModule="Analyzar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NOU-cA-LOU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,6 +24,7 @@
                             <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="mhm-kH-0vB">
                                 <rect key="frame" x="160" y="651" width="55" height="37"/>
                                 <color key="pageIndicatorTintColor" red="0.68565231559999995" green="0.2861825824" blue="0.65249365569999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="currentPageIndicatorTintColor" red="0.66422420739999999" green="0.66424006219999998" blue="0.66423153879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </pageControl>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tZ7-tf-Iy7">
                                 <rect key="frame" x="80" y="698" width="215" height="50"/>
@@ -33,10 +34,10 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                 <state key="normal" title="EXPLORE THE APP">
-                                    <color key="titleColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="cVp-pO-O8Y" kind="showDetail" id="TXu-2T-dD7"/>
+                                    <segue destination="nGs-bj-pYR" kind="showDetail" id="TzZ-DA-c0x"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -64,20 +65,132 @@
             </objects>
             <point key="canvasLocation" x="-1274" y="-1592"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="KMc-QC-1yu">
+        <!--Instagram Analyzer-->
+        <scene sceneID="LJj-FK-EVl">
             <objects>
-                <viewController id="cVp-pO-O8Y" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="iVR-a7-b7f">
+                <viewController id="pB1-lf-Dog" userLabel="Instagram Analyzer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wig-GD-2Zz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nrS-t8-zzk">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="HhL-OF-xDt"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="f4G-c4-NoY"/>
+                        <viewLayoutGuide key="safeArea" id="rNO-Rz-yFe"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Instagram" image="instagramBarIcon" selectedImage="instagramBarIcon" id="QeL-CD-87B"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MbY-cQ-Qwm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Ss-py-kAL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-498" y="-1592"/>
+            <point key="canvasLocation" x="1324" y="-1920"/>
+        </scene>
+        <!--Twitter Analyzer-->
+        <scene sceneID="FdZ-JV-YVQ">
+            <objects>
+                <viewController title="Twitter Analyzer" id="lz4-ca-sue" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wJi-ur-gxc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fat-RE-dia">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Twitter analyzer" id="I8Y-qC-4BY"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sG1-OB-F3e"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Twitter" image="twitterBarIcon" selectedImage="twitterBarIcon" id="ULU-HZ-lx9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sqK-SR-bTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="532" y="-1919"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ffm-CA-NIz">
+            <objects>
+                <tabBarController id="nGs-bj-pYR" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ZpD-ei-ExO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="lz4-ca-sue" kind="relationship" relationship="viewControllers" id="Bp5-5y-gKg"/>
+                        <segue destination="pB1-lf-Dog" kind="relationship" relationship="viewControllers" id="joZ-1Y-LDO"/>
+                        <segue destination="Aho-pL-Fka" kind="relationship" relationship="viewControllers" id="GZ4-MS-5HI"/>
+                        <segue destination="gpB-bb-6Ta" kind="relationship" relationship="viewControllers" id="Lpk-4X-P3F"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GP8-aq-sC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-420" y="-1592"/>
+        </scene>
+        <!--Analyze History-->
+        <scene sceneID="zpG-pT-lHy">
+            <objects>
+                <viewController id="gpB-bb-6Ta" userLabel="Analyze History" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yCi-ak-Fua">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="imC-MQ-CFG">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Analyzer history" id="5xn-fU-0Zm"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="l0K-fh-1Pc"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" systemItem="history" id="yxo-5g-ELR"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vMV-1F-VB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2722" y="-1920"/>
+        </scene>
+        <!--Facebook Analyzer-->
+        <scene sceneID="g91-jG-SIj">
+            <objects>
+                <viewController id="Aho-pL-Fka" userLabel="Facebook Analyzer" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="M9K-Gx-3mH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cYr-Xm-rCd">
+                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Facebook analyzer" id="GSI-DQ-fOI"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="76Q-Ev-399"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Facebook" image="facebookBarIcon" selectedImage="facebookBarIcon" id="jCi-Kk-Rst"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zfd-SJ-CVY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2023" y="-1920"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="facebookBarIcon" width="25" height="25"/>
+        <image name="instagramBarIcon" width="25" height="25"/>
+        <image name="twitterBarIcon" width="25" height="25"/>
+    </resources>
 </document>

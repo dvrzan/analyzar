@@ -12,8 +12,9 @@
 		7369C29D23206BD300627600 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7369C29C23206BD300627600 /* Slide.xib */; };
 		73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA31E23186C6C009D7980 /* AppDelegate.swift */; };
 		73BFA32123186C6C009D7980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA32023186C6C009D7980 /* ViewController.swift */; };
-		73BFA32623186C6E009D7980 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73BFA32523186C6E009D7980 /* Assets.xcassets */; };
 		73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */; };
+		73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2D23218C8900E46DDF /* Assets.xcassets */; };
+		73EE2C302321941900E46DDF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2F2321941900E46DDF /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,9 +24,10 @@
 		73BFA31B23186C6C009D7980 /* Analyzar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analyzar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BFA31E23186C6C009D7980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BFA32023186C6C009D7980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		73BFA32523186C6E009D7980 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73BFA32823186C6E009D7980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73BFA32A23186C6E009D7980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		73EE2C2D23218C8900E46DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		73EE2C2F2321941900E46DDF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		73BFA31223186C6C009D7980 = {
 			isa = PBXGroup;
 			children = (
+				73EE2C2F2321941900E46DDF /* Settings.bundle */,
 				73BFA31D23186C6C009D7980 /* Analyzar */,
 				73BFA31C23186C6C009D7980 /* Products */,
 			);
@@ -58,16 +61,56 @@
 		73BFA31D23186C6C009D7980 /* Analyzar */ = {
 			isa = PBXGroup;
 			children = (
+				73EE2C312321952F00E46DDF /* Models */,
+				73EE2C322321953B00E46DDF /* Views */,
+				73EE2C332321954200E46DDF /* Controllers */,
+				73EE2C342321954C00E46DDF /* Stores */,
+				73EE2C352321955300E46DDF /* Helpers */,
+				73EE2C2D23218C8900E46DDF /* Assets.xcassets */,
 				7369C29A23206B8D00627600 /* Slide.swift */,
 				7311E8AC23197F58008970C2 /* Main.storyboard */,
 				73BFA31E23186C6C009D7980 /* AppDelegate.swift */,
 				73BFA32023186C6C009D7980 /* ViewController.swift */,
-				73BFA32523186C6E009D7980 /* Assets.xcassets */,
 				73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */,
 				73BFA32A23186C6E009D7980 /* Info.plist */,
 				7369C29C23206BD300627600 /* Slide.xib */,
 			);
 			path = Analyzar;
+			sourceTree = "<group>";
+		};
+		73EE2C312321952F00E46DDF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		73EE2C322321953B00E46DDF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		73EE2C332321954200E46DDF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		73EE2C342321954C00E46DDF /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		73EE2C352321955300E46DDF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -130,7 +173,8 @@
 			files = (
 				7311E8AE23197F58008970C2 /* Main.storyboard in Resources */,
 				73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */,
-				73BFA32623186C6E009D7980 /* Assets.xcassets in Resources */,
+				73EE2C302321941900E46DDF /* Settings.bundle in Resources */,
+				73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */,
 				7369C29D23206BD300627600 /* Slide.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
