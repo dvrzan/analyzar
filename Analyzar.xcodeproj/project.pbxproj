@@ -3,27 +3,97 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		652EBBE4C008B5030500C255 /* Pods_Analyzar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C17BDF8A9E219A873306FA1 /* Pods_Analyzar.framework */; };
 		7311E8AE23197F58008970C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7311E8AC23197F58008970C2 /* Main.storyboard */; };
 		7369C29B23206B8D00627600 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7369C29A23206B8D00627600 /* Slide.swift */; };
 		7369C29D23206BD300627600 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7369C29C23206BD300627600 /* Slide.xib */; };
+		73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8AB912322C2F1008025EC /* TwitterViewController.swift */; };
+		73A8ABA52322C74E008025EC /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A8AB9E2322C73C008025EC /* SwifteriOS.framework */; };
+		73A8ABA62322C74E008025EC /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73A8AB9E2322C73C008025EC /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */; };
 		73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA31E23186C6C009D7980 /* AppDelegate.swift */; };
-		73BFA32123186C6C009D7980 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA32023186C6C009D7980 /* ViewController.swift */; };
+		73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA32023186C6C009D7980 /* OnboardingViewController.swift */; };
 		73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */; };
 		73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2D23218C8900E46DDF /* Assets.xcassets */; };
 		73EE2C302321941900E46DDF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2F2321941900E46DDF /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		73A8AB9B2322C73C008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		73A8AB9D2322C73C008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+		73A8AB9F2322C73C008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		73A8ABA12322C73C008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		73A8ABA32322C73C008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
+		};
+		73A8ABA72322C74E008025EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			remoteInfo = SwifteriOS;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		73A8ABA92322C74E008025EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				73A8ABA62322C74E008025EC /* SwifteriOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		1C17BDF8A9E219A873306FA1 /* Pods_Analyzar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Analyzar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4481A37A22E5AB1D67B1133C /* Pods-Analyzar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analyzar.release.xcconfig"; path = "Target Support Files/Pods-Analyzar/Pods-Analyzar.release.xcconfig"; sourceTree = "<group>"; };
+		53C6B476B8F7463ACDFB9B0C /* Pods-Analyzar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Analyzar.debug.xcconfig"; path = "Target Support Files/Pods-Analyzar/Pods-Analyzar.debug.xcconfig"; sourceTree = "<group>"; };
 		7311E8AD23197F58008970C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7369C29A23206B8D00627600 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		7369C29C23206BD300627600 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		73A8AB912322C2F1008025EC /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
+		73A8AB932322C73C008025EC /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
+		73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AnalyzarSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		73BFA31B23186C6C009D7980 /* Analyzar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analyzar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BFA31E23186C6C009D7980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73BFA32023186C6C009D7980 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		73BFA32023186C6C009D7980 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		73BFA32823186C6E009D7980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73BFA32A23186C6E009D7980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73EE2C2D23218C8900E46DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -35,18 +105,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				652EBBE4C008B5030500C255 /* Pods_Analyzar.framework in Frameworks */,
+				73A8ABA52322C74E008025EC /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		56E3F14EBBAEB29909EBC6FD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C17BDF8A9E219A873306FA1 /* Pods_Analyzar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		585A93054044CA9EC828EDC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				53C6B476B8F7463ACDFB9B0C /* Pods-Analyzar.debug.xcconfig */,
+				4481A37A22E5AB1D67B1133C /* Pods-Analyzar.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		73A8AB942322C73C008025EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73A8AB9C2322C73C008025EC /* SwifterDemoiOS.app */,
+				73A8AB9E2322C73C008025EC /* SwifteriOS.framework */,
+				73A8ABA02322C73C008025EC /* SwifterMac.framework */,
+				73A8ABA22322C73C008025EC /* SwifterDemoMac.app */,
+				73A8ABA42322C73C008025EC /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		73BFA31223186C6C009D7980 = {
 			isa = PBXGroup;
 			children = (
+				73A8AB932322C73C008025EC /* Swifter.xcodeproj */,
 				73EE2C2F2321941900E46DDF /* Settings.bundle */,
 				73BFA31D23186C6C009D7980 /* Analyzar */,
 				73BFA31C23186C6C009D7980 /* Products */,
+				585A93054044CA9EC828EDC5 /* Pods */,
+				56E3F14EBBAEB29909EBC6FD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,56 +165,18 @@
 		73BFA31D23186C6C009D7980 /* Analyzar */ = {
 			isa = PBXGroup;
 			children = (
-				73EE2C312321952F00E46DDF /* Models */,
-				73EE2C322321953B00E46DDF /* Views */,
-				73EE2C332321954200E46DDF /* Controllers */,
-				73EE2C342321954C00E46DDF /* Stores */,
-				73EE2C352321955300E46DDF /* Helpers */,
-				73EE2C2D23218C8900E46DDF /* Assets.xcassets */,
+				73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */,
+				73BFA32023186C6C009D7980 /* OnboardingViewController.swift */,
+				73A8AB912322C2F1008025EC /* TwitterViewController.swift */,
 				7369C29A23206B8D00627600 /* Slide.swift */,
-				7311E8AC23197F58008970C2 /* Main.storyboard */,
-				73BFA31E23186C6C009D7980 /* AppDelegate.swift */,
-				73BFA32023186C6C009D7980 /* ViewController.swift */,
+				73EE2C2D23218C8900E46DDF /* Assets.xcassets */,
 				73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */,
-				73BFA32A23186C6E009D7980 /* Info.plist */,
+				7311E8AC23197F58008970C2 /* Main.storyboard */,
 				7369C29C23206BD300627600 /* Slide.xib */,
+				73BFA32A23186C6E009D7980 /* Info.plist */,
+				73BFA31E23186C6C009D7980 /* AppDelegate.swift */,
 			);
 			path = Analyzar;
-			sourceTree = "<group>";
-		};
-		73EE2C312321952F00E46DDF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		73EE2C322321953B00E46DDF /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		73EE2C332321954200E46DDF /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
-		73EE2C342321954C00E46DDF /* Stores */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Stores;
-			sourceTree = "<group>";
-		};
-		73EE2C352321955300E46DDF /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,13 +186,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 73BFA32D23186C6E009D7980 /* Build configuration list for PBXNativeTarget "Analyzar" */;
 			buildPhases = (
+				1CA284006AF004ABF857498C /* [CP] Check Pods Manifest.lock */,
 				73BFA31723186C6C009D7980 /* Sources */,
 				73BFA31823186C6C009D7980 /* Frameworks */,
 				73BFA31923186C6C009D7980 /* Resources */,
+				8EF42E9D398217B74D6A8B36 /* [CP] Embed Pods Frameworks */,
+				73A8ABA92322C74E008025EC /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				73A8ABA82322C74E008025EC /* PBXTargetDependency */,
 			);
 			name = Analyzar;
 			productName = Analyzar;
@@ -159,12 +229,56 @@
 			mainGroup = 73BFA31223186C6C009D7980;
 			productRefGroup = 73BFA31C23186C6C009D7980 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 73A8AB942322C73C008025EC /* Products */;
+					ProjectRef = 73A8AB932322C73C008025EC /* Swifter.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				73BFA31A23186C6C009D7980 /* Analyzar */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		73A8AB9C2322C73C008025EC /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 73A8AB9B2322C73C008025EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		73A8AB9E2322C73C008025EC /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 73A8AB9D2322C73C008025EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		73A8ABA02322C73C008025EC /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 73A8AB9F2322C73C008025EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		73A8ABA22322C73C008025EC /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 73A8ABA12322C73C008025EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		73A8ABA42322C73C008025EC /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 73A8ABA32322C73C008025EC /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		73BFA31923186C6C009D7980 /* Resources */ = {
@@ -181,18 +295,70 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CA284006AF004ABF857498C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Analyzar-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EF42E9D398217B74D6A8B36 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Analyzar/Pods-Analyzar-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Analyzar/Pods-Analyzar-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Analyzar/Pods-Analyzar-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		73BFA31723186C6C009D7980 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */,
+				73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */,
 				7369C29B23206B8D00627600 /* Slide.swift in Sources */,
-				73BFA32123186C6C009D7980 /* ViewController.swift in Sources */,
+				73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */,
 				73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		73A8ABA82322C74E008025EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwifteriOS;
+			targetProxy = 73A8ABA72322C74E008025EC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		7311E8AC23197F58008970C2 /* Main.storyboard */ = {
@@ -332,7 +498,9 @@
 		};
 		73BFA32E23186C6E009D7980 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53C6B476B8F7463ACDFB9B0C /* Pods-Analyzar.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
@@ -350,7 +518,9 @@
 		};
 		73BFA32F23186C6E009D7980 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4481A37A22E5AB1D67B1133C /* Pods-Analyzar.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
