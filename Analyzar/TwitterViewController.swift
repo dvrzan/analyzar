@@ -7,24 +7,119 @@
 //
 
 import UIKit
+import SwifteriOS
+import CoreML
+import SwiftyJSON
 
 class TwitterViewController: UIViewController {
+    
+    
+    @IBOutlet weak var twitterSentimentLabel: UILabel!
+    @IBOutlet weak var twitterTextField: UITextField!
+    @IBOutlet weak var checkTwitterButton: UIButton! {
+        didSet{
+            checkTwitterButton.layer.cornerRadius = 8
+        }
+    }
+    @IBOutlet weak var sentimentScoreLabel: UILabel!
+    
+    
+    let tweetCount = 100
+    let sentimentClassifier = AnalyzarSentimentClassifier()
+    
+    //Initialize new instance of Swifter framework and authenticate with API key and API secret key
+    let swifter = Swifter(consumerKey: valueForAPIKey(named: "API_KEY_TWITTER"), consumerSecret: valueForAPIKey(named: "API_SECRET_KEY_TWITTER"))
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        checkTwitterButton.isEnabled = false
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    @IBAction func twitterTextFieldEditingDidChange(_ sender: UITextField) {
+        if let userInput = sender.text, userInput.isValidInput == true {
+            twitterTextField.textColor = .black
+            return checkTwitterButton.isEnabled = true
+        } else {
+            twitterTextField.textColor = .red
+            return checkTwitterButton.isEnabled = false
+        }
     }
-    */
-
+    
+    @IBAction func checkTwitterButtonPressed(_ sender: Any) {
+        self.showSpinner(onView: self.view)
+        getTweets()
+    }
+    
+    func getTweets() {
+        if let searchText = twitterTextField.text {
+            swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, metadata) in
+                
+                var tweets = [AnalyzarSentimentClassifierInput]()
+                
+                for i in 0..<self.tweetCount {
+                    if let tweet = results[i]["full_text"].string {
+                        let tweetClassification = AnalyzarSentimentClassifierInput(text: tweet)
+                        tweets.append(tweetClassification)
+                    }
+                }
+                self.predictSentiment(with: tweets)
+            }) { (error) in
+                print("Twitter API Request error, \(error)")
+            }
+        }
+    }
+    
+    func predictSentiment(with tweets: [AnalyzarSentimentClassifierInput]) {
+        do {
+            let predictions = try self.sentimentClassifier.predictions(inputs: tweets)
+            
+            var sentimentScore = 0
+            
+            for p in predictions {
+                let sentiment = p.label
+                if sentiment == "positive" {
+                    sentimentScore += 1
+                } else if sentiment == "negative" {
+                    sentimentScore -= 1
+                }
+            }
+            self.removeSpinner()
+            showSentimentUI(with: sentimentScore)
+        } catch {
+            print("There was an error with prediction, \(error)")
+        }
+    }
+    
+    func showSentimentUI(with sentimentScore: Int) {
+        if sentimentScore > 50 {
+            self.twitterSentimentLabel.text = "❤️"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nTrue love knows no boundaries."
+        } else if sentimentScore > 20 {
+            self.twitterSentimentLabel.text = "😍"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nThe positivity is though the roof!"
+        } else if sentimentScore > 10 {
+            self.twitterSentimentLabel.text = "😃"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nPeople can't stop talking about it."
+        } else if sentimentScore > 0 {
+            self.twitterSentimentLabel.text = "🙂"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nAs long as it's smile, it's good."
+        } else if sentimentScore == 0 {
+            self.twitterSentimentLabel.text = "😐"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nIt could have been worse, you know..."
+        } else if sentimentScore > -10 {
+            self.twitterSentimentLabel.text = "🙁"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nOh, oh, people don't quite like it."
+        } else if sentimentScore > -20 {
+            self.twitterSentimentLabel.text = "😤"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nPeople are frustrated with this one!"
+        } else if sentimentScore > -50 {
+            self.twitterSentimentLabel.text = "😡"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nThere has to be a good reason behind this."
+        } else {
+            self.twitterSentimentLabel.text = "☠️"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nNot good! Run for your life!"
+        }
+    }
+    
 }

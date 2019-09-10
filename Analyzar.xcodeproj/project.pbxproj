@@ -15,11 +15,14 @@
 		73A8ABA52322C74E008025EC /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A8AB9E2322C73C008025EC /* SwifteriOS.framework */; };
 		73A8ABA62322C74E008025EC /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 73A8AB9E2322C73C008025EC /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */; };
+		73A9BF0C2326FCF900EE1591 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73A9BF0B2326FCF900EE1591 /* APIKeys.plist */; };
+		73A9BF0E2326FD7F00EE1591 /* APIKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9BF0D2326FD7F00EE1591 /* APIKeys.swift */; };
+		73A9BF14232702FE00EE1591 /* UIViewController+ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9BF13232702FE00EE1591 /* UIViewController+ActivityIndicator.swift */; };
+		73A9BF162327033000EE1591 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A9BF152327033000EE1591 /* String+Regex.swift */; };
 		73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA31E23186C6C009D7980 /* AppDelegate.swift */; };
 		73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA32023186C6C009D7980 /* OnboardingViewController.swift */; };
 		73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */; };
 		73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2D23218C8900E46DDF /* Assets.xcassets */; };
-		73EE2C302321941900E46DDF /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2F2321941900E46DDF /* Settings.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,13 +94,16 @@
 		73A8AB912322C2F1008025EC /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		73A8AB932322C73C008025EC /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
 		73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = AnalyzarSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		73A9BF0B2326FCF900EE1591 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
+		73A9BF0D2326FD7F00EE1591 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
+		73A9BF13232702FE00EE1591 /* UIViewController+ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivityIndicator.swift"; sourceTree = "<group>"; };
+		73A9BF152327033000EE1591 /* String+Regex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
 		73BFA31B23186C6C009D7980 /* Analyzar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analyzar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73BFA31E23186C6C009D7980 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73BFA32023186C6C009D7980 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		73BFA32823186C6E009D7980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73BFA32A23186C6E009D7980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73EE2C2D23218C8900E46DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		73EE2C2F2321941900E46DDF /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +152,6 @@
 			isa = PBXGroup;
 			children = (
 				73A8AB932322C73C008025EC /* Swifter.xcodeproj */,
-				73EE2C2F2321941900E46DDF /* Settings.bundle */,
 				73BFA31D23186C6C009D7980 /* Analyzar */,
 				73BFA31C23186C6C009D7980 /* Products */,
 				585A93054044CA9EC828EDC5 /* Pods */,
@@ -175,6 +180,10 @@
 				7369C29C23206BD300627600 /* Slide.xib */,
 				73BFA32A23186C6E009D7980 /* Info.plist */,
 				73BFA31E23186C6C009D7980 /* AppDelegate.swift */,
+				73A9BF0B2326FCF900EE1591 /* APIKeys.plist */,
+				73A9BF0D2326FD7F00EE1591 /* APIKeys.swift */,
+				73A9BF13232702FE00EE1591 /* UIViewController+ActivityIndicator.swift */,
+				73A9BF152327033000EE1591 /* String+Regex.swift */,
 			);
 			path = Analyzar;
 			sourceTree = "<group>";
@@ -286,8 +295,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				7311E8AE23197F58008970C2 /* Main.storyboard in Resources */,
+				73A9BF0C2326FCF900EE1591 /* APIKeys.plist in Resources */,
 				73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */,
-				73EE2C302321941900E46DDF /* Settings.bundle in Resources */,
 				73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */,
 				7369C29D23206BD300627600 /* Slide.xib in Resources */,
 			);
@@ -342,8 +351,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73A9BF0E2326FD7F00EE1591 /* APIKeys.swift in Sources */,
 				73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */,
+				73A9BF162327033000EE1591 /* String+Regex.swift in Sources */,
 				73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */,
+				73A9BF14232702FE00EE1591 /* UIViewController+ActivityIndicator.swift in Sources */,
 				7369C29B23206B8D00627600 /* Slide.swift in Sources */,
 				73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */,
 				73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */,
@@ -512,7 +524,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.Analyzar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -532,7 +544,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.Analyzar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
