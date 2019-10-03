@@ -37,12 +37,10 @@ class TwitterViewController: UIViewController {
     
     
     @IBAction func twitterTextFieldEditingDidChange(_ sender: UITextField) {
-        if let userInput = sender.text, userInput.isValidInput == true {
-            twitterTextField.textColor = .black
-            return checkTwitterButton.isEnabled = true
-        } else {
-            twitterTextField.textColor = .red
+        if let userInput = sender.text, userInput.isValidInput == false {
             return checkTwitterButton.isEnabled = false
+        } else {
+            return checkTwitterButton.isEnabled = true
         }
     }
     
