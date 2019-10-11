@@ -2,17 +2,17 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "Analyzar - logo-with-text.png",
+      "filename" : "onboardAnalyze2.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Analyzar - logo-with-text@2x.png",
+      "filename" : "onboardAnalyze2@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "Analyzar - logo-with-text@3x.png",
+      "filename" : "onboardAnalyze2@3x.png",
       "scale" : "3x"
     }
   ],

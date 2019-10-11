@@ -31,24 +31,24 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
     func createSlides() -> [Slide] {
         
         let slide1:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide1.imageView.image = UIImage(named: "StartScreen")
-        slide1.labelTitle.text = "Sentiment analyzer"
-        slide1.labelDescription.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu nisl non sapien."
+        slide1.imageView.image = UIImage(named: "onboard1")
+        slide1.labelTitle.text = "Analyze"
+        slide1.labelDescription.text = "Analyze opinions from people all around the globe in a matter of seconds."
         
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide2.imageView.image = UIImage(named: "StartScreen")
-        slide2.labelTitle.text = "Sentiment analyzer"
-        slide2.labelDescription.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu nisl non sapien."
+        slide2.imageView.image = UIImage(named: "onboard2")
+        slide2.labelTitle.text = "Topic or Person"
+        slide2.labelDescription.text = "Use #topic or @person to search Twitter for opinions."
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide3.imageView.image = UIImage(named: "StartScreen")
-        slide3.labelTitle.text = "Sentiment analyzer"
-        slide3.labelDescription.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu nisl non sapien."
+        slide3.imageView.image = UIImage(named: "onboard3")
+        slide3.labelTitle.text = "Keep track"
+        slide3.labelDescription.text = "Search history shows you how fast opinions change."
         
         let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageView.image = UIImage(named: "StartScreen")
-        slide4.labelTitle.text = "Sentiment analyzer"
-        slide4.labelDescription.text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eu nisl non sapien."
+        slide4.imageView.image = UIImage(named: "onboard4")
+        slide4.labelTitle.text = "Learn"
+        slide4.labelDescription.text = "All while having fun! Ever wondered how machines learn?"
         
         return [slide1, slide2, slide3, slide4]
     }
