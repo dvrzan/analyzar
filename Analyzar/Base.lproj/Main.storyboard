@@ -74,6 +74,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-zG-xKw" userLabel="Top container">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                                 <subviews>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-Zz-J3E">
+                                        <rect key="frame" x="0.0" y="52" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Twitter sentiment analyzer" id="AFA-Xq-Yx5"/>
+                                        </items>
+                                    </navigationBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-zU-W3x">
                                         <rect key="frame" x="152.66666666666666" y="153" width="70" height="70"/>
                                         <constraints>
@@ -93,9 +99,12 @@
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="6Ec-zf-Pui" firstAttribute="top" secondItem="aoZ-zU-W3x" secondAttribute="bottom" id="0St-xb-v0f"/>
+                                    <constraint firstItem="MKt-Zz-J3E" firstAttribute="leading" secondItem="xCS-zG-xKw" secondAttribute="leading" id="1cm-RC-VFS"/>
                                     <constraint firstItem="aoZ-zU-W3x" firstAttribute="centerX" secondItem="xCS-zG-xKw" secondAttribute="centerX" id="AuH-NI-Sfv"/>
                                     <constraint firstAttribute="trailing" secondItem="6Ec-zf-Pui" secondAttribute="trailing" constant="20" id="BQX-Ui-xia"/>
                                     <constraint firstAttribute="bottom" secondItem="6Ec-zf-Pui" secondAttribute="bottom" id="Ugc-ED-N2t"/>
+                                    <constraint firstItem="MKt-Zz-J3E" firstAttribute="top" secondItem="xCS-zG-xKw" secondAttribute="topMargin" id="V2i-Su-g8m"/>
+                                    <constraint firstItem="MKt-Zz-J3E" firstAttribute="centerX" secondItem="aoZ-zU-W3x" secondAttribute="centerX" id="VUr-3N-FLn"/>
                                     <constraint firstItem="6Ec-zf-Pui" firstAttribute="leading" secondItem="xCS-zG-xKw" secondAttribute="leading" constant="20" id="i7X-LD-SqC"/>
                                     <constraint firstItem="aoZ-zU-W3x" firstAttribute="centerY" secondItem="xCS-zG-xKw" secondAttribute="centerY" id="oHQ-IA-S77"/>
                                 </constraints>

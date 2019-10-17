@@ -33,6 +33,11 @@ class TwitterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         checkTwitterButton.isEnabled = false
+        
+        //Hide keyboard on tap
+        let gesture = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing(_:)))
+        view.addGestureRecognizer(gesture)
+        
     }
     
     
