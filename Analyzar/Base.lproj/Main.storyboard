@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="-1274" y="-1592"/>
         </scene>
-        <!--Twitter-->
+        <!--Analyze-->
         <scene sceneID="FdZ-JV-YVQ">
             <objects>
-                <viewController title="Twitter" id="lz4-ca-sue" userLabel="Twitter" customClass="TwitterViewController" customModule="Analyzar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Twitter" id="lz4-ca-sue" userLabel="Analyze" customClass="TwitterViewController" customModule="Analyzar" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wJi-ur-gxc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,12 +74,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xCS-zG-xKw" userLabel="Top container">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="376"/>
                                 <subviews>
-                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-Zz-J3E">
-                                        <rect key="frame" x="0.0" y="52" width="375" height="44"/>
-                                        <items>
-                                            <navigationItem title="Twitter sentiment analyzer" id="AFA-Xq-Yx5"/>
-                                        </items>
-                                    </navigationBar>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🤔" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="35" translatesAutoresizingMaskIntoConstraints="NO" id="aoZ-zU-W3x">
                                         <rect key="frame" x="152.66666666666666" y="153" width="70" height="70"/>
                                         <constraints>
@@ -96,6 +90,12 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-Zz-J3E">
+                                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                                        <items>
+                                            <navigationItem title="Twitter sentiment analyzer" id="AFA-Xq-Yx5"/>
+                                        </items>
+                                    </navigationBar>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="6Ec-zf-Pui" firstAttribute="top" secondItem="aoZ-zU-W3x" secondAttribute="bottom" id="0St-xb-v0f"/>
@@ -103,7 +103,7 @@
                                     <constraint firstItem="aoZ-zU-W3x" firstAttribute="centerX" secondItem="xCS-zG-xKw" secondAttribute="centerX" id="AuH-NI-Sfv"/>
                                     <constraint firstAttribute="trailing" secondItem="6Ec-zf-Pui" secondAttribute="trailing" constant="20" id="BQX-Ui-xia"/>
                                     <constraint firstAttribute="bottom" secondItem="6Ec-zf-Pui" secondAttribute="bottom" id="Ugc-ED-N2t"/>
-                                    <constraint firstItem="MKt-Zz-J3E" firstAttribute="top" secondItem="xCS-zG-xKw" secondAttribute="topMargin" id="V2i-Su-g8m"/>
+                                    <constraint firstItem="MKt-Zz-J3E" firstAttribute="top" secondItem="xCS-zG-xKw" secondAttribute="topMargin" constant="-8" id="V2i-Su-g8m"/>
                                     <constraint firstItem="MKt-Zz-J3E" firstAttribute="centerX" secondItem="aoZ-zU-W3x" secondAttribute="centerX" id="VUr-3N-FLn"/>
                                     <constraint firstItem="6Ec-zf-Pui" firstAttribute="leading" secondItem="xCS-zG-xKw" secondAttribute="leading" constant="20" id="i7X-LD-SqC"/>
                                     <constraint firstItem="aoZ-zU-W3x" firstAttribute="centerY" secondItem="xCS-zG-xKw" secondAttribute="centerY" id="oHQ-IA-S77"/>
@@ -188,7 +188,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sqK-SR-bTm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="542" y="-2155"/>
+            <point key="canvasLocation" x="519" y="-2177"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="3ch-Ha-5sP">
+            <objects>
+                <tableViewController title="Learn" id="IIE-qX-iUT" userLabel="Learn" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7gx-su-UGN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="blue" indentationWidth="10" reuseIdentifier="learnCell" id="Td9-kc-gQu">
+                                <rect key="frame" x="0.0" y="28" width="375" height="43.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Td9-kc-gQu" id="jxZ-Az-5VR">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ev3-33-reD">
+                                            <rect key="frame" x="16" y="0.0" width="34" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SFh-iw-lUZ">
+                                            <rect key="frame" x="16" y="28" width="31" height="15"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="SFh-iw-lUZ" firstAttribute="top" secondItem="Ev3-33-reD" secondAttribute="bottom" constant="7" id="2z4-UC-HtQ"/>
+                                        <constraint firstItem="SFh-iw-lUZ" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Ev3-33-reD" secondAttribute="leading" id="43C-H8-gdJ"/>
+                                        <constraint firstItem="Ev3-33-reD" firstAttribute="leading" secondItem="jxZ-Az-5VR" secondAttribute="leadingMargin" id="WHg-0L-nni"/>
+                                        <constraint firstItem="Ev3-33-reD" firstAttribute="top" secondItem="jxZ-Az-5VR" secondAttribute="topMargin" constant="-11" id="WWZ-Np-HFl"/>
+                                        <constraint firstAttribute="trailing" secondItem="Ev3-33-reD" secondAttribute="trailing" constant="325" id="b4q-uo-752"/>
+                                        <constraint firstAttribute="trailing" secondItem="SFh-iw-lUZ" secondAttribute="trailing" constant="328" id="gkc-c1-1pQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="apd-TQ-BeD" kind="show" id="53o-Et-syr"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="IIE-qX-iUT" id="L4B-h4-0BR"/>
+                            <outlet property="delegate" destination="IIE-qX-iUT" id="1bw-Qp-BBK"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Learn" id="jCI-Pc-SNo">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="mYV-AS-YJi"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j6W-uY-cDv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1357.5999999999999" y="-1524.384236453202"/>
+        </scene>
+        <!--Detail Learn-->
+        <scene sceneID="04k-Dy-ICJ">
+            <objects>
+                <viewController title="Detail Learn" id="apd-TQ-BeD" userLabel="Detail Learn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aU4-D2-Lj3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="5tb-65-YwX"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Machine learning" largeTitleDisplayMode="always" id="Mya-T0-JJx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Ex-7t-oxj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2196" y="-1524"/>
+        </scene>
+        <!--Learn-->
+        <scene sceneID="68U-AW-Yyp">
+            <objects>
+                <navigationController id="Ne9-dl-wUD" userLabel="Learn" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Learn" image="learnBarIcon" selectedImage="learnBarIcon" id="GHi-bS-Xqg"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o1d-Zw-fQ5">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="IIE-qX-iUT" kind="relationship" relationship="rootViewController" id="o3b-53-hT5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b06-dY-1no" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="518" y="-1524"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="ffm-CA-NIz">
@@ -204,69 +294,17 @@
                     </tabBar>
                     <connections>
                         <segue destination="lz4-ca-sue" kind="relationship" relationship="viewControllers" id="Bp5-5y-gKg"/>
-                        <segue destination="gpB-bb-6Ta" kind="relationship" relationship="viewControllers" id="Lpk-4X-P3F"/>
-                        <segue destination="Ecg-ZE-p2k" kind="relationship" relationship="viewControllers" id="cXJ-pi-GuJ"/>
-                        <segue destination="dib-K0-aMW" kind="relationship" relationship="viewControllers" id="66X-rR-tzh"/>
+                        <segue destination="Ne9-dl-wUD" kind="relationship" relationship="viewControllers" id="l1N-61-Ego"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GP8-aq-sC4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-420" y="-1592"/>
         </scene>
-        <!--History-->
-        <scene sceneID="zpG-pT-lHy">
-            <objects>
-                <viewController title="History" id="gpB-bb-6Ta" userLabel="History" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yCi-ak-Fua">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="l0K-fh-1Pc"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="" systemItem="history" id="yxo-5g-ELR"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vMV-1F-VB2" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1212" y="-2155"/>
-        </scene>
-        <!--Learn-->
-        <scene sceneID="QdF-Lr-r3C">
-            <objects>
-                <viewController title="Learn" id="Ecg-ZE-p2k" userLabel="Learn" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="tti-KS-qRc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="xvG-9i-jHq"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Learn" image="learnBarIcon" selectedImage="learnBarIcon" id="I75-mE-Quc"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="z5G-y6-aMx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="542" y="-1497"/>
-        </scene>
-        <!--More-->
-        <scene sceneID="v5V-f5-UMN">
-            <objects>
-                <viewController title="More" id="dib-K0-aMW" userLabel="More" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="fft-KW-G4F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="WMx-cJ-gyA"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" systemItem="more" id="6FN-aA-THE"/>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Xh3-zQ-YVr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="524" y="-826"/>
-        </scene>
     </scenes>
     <resources>
         <image name="learnBarIcon" width="25" height="25"/>
         <image name="twitterBarIcon" width="25" height="25"/>
     </resources>
+    <color key="tintColor" red="0.59215686270000001" green="0.027450980390000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
 </document>
