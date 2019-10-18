@@ -13,7 +13,6 @@ import SwiftyJSON
 
 class TwitterViewController: UIViewController {
     
-    
     @IBOutlet weak var twitterSentimentLabel: UILabel!
     @IBOutlet weak var twitterTextField: UITextField!
     @IBOutlet weak var checkTwitterButton: UIButton! {
@@ -39,7 +38,6 @@ class TwitterViewController: UIViewController {
         view.addGestureRecognizer(gesture)
         
     }
-    
     
     @IBAction func twitterTextFieldEditingDidChange(_ sender: UITextField) {
         if let userInput = sender.text, userInput.isValidInput == false {
@@ -125,4 +123,37 @@ class TwitterViewController: UIViewController {
         }
     }
     
+}
+
+extension String {
+    var isValidInput: Bool {
+        let checkUserInputRegex = "^[@][A-z0-9]+|^[#][A-z0-9]+"
+        return NSPredicate(format: "SELF MATCHES %@", checkUserInputRegex).evaluate(with: self)
+    }
+}
+
+var vSpinner : UIView?
+
+extension UIViewController {
+    func showSpinner(onView : UIView) {
+        let spinnerView = UIView.init(frame: onView.bounds)
+        spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
+        let ai = UIActivityIndicatorView.init(style: .whiteLarge)
+        ai.startAnimating()
+        ai.center = spinnerView.center
+        
+        DispatchQueue.main.async {
+            spinnerView.addSubview(ai)
+            onView.addSubview(spinnerView)
+        }
+        
+        vSpinner = spinnerView
+    }
+    
+    func removeSpinner() {
+        DispatchQueue.main.async {
+            vSpinner?.removeFromSuperview()
+            vSpinner = nil
+        }
+    }
 }
