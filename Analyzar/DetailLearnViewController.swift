@@ -12,7 +12,7 @@ class DetailLearnViewController: UIViewController {
     
     @IBOutlet weak var detailTitleLabel: UILabel!
     @IBOutlet weak var detailImageView: UIImageView!
-    @IBOutlet weak var detailDescriptionLabel: UILabel!
+    @IBOutlet weak var detailDescriptionTextView: UITextView!
     
     
     var learningMaterial: LearningMaterial? {
@@ -30,10 +30,10 @@ class DetailLearnViewController: UIViewController {
     func configureView() {
         if let learningMaterial = learningMaterial,
             let detailTitleLabel = detailTitleLabel,
-            let detailDescriptionLabel = detailDescriptionLabel,
+            let detailDescriptionTextView = detailDescriptionTextView,
             let detailImageView = detailImageView {
             detailTitleLabel.text = learningMaterial.title
-            detailDescriptionLabel.text = learningMaterial.description
+            detailDescriptionTextView.text = learningMaterial.description
             detailImageView.image = UIImage(named: learningMaterial.title)
             title = learningMaterial.category.rawValue
         }
