@@ -1,2 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-Analyzar/Pods-Analyzar-frameworks.sh
+${BUILT_PRODUCTS_DIR}/SwiftRichString/SwiftRichString.framework
 ${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework

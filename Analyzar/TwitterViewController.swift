@@ -52,6 +52,12 @@ class TwitterViewController: UIViewController {
         getTweets()
     }
     
+    func showError() {
+        let alert = UIAlertController(title: "Loading error", message: "There was a problem loading the feed; please check your connection and try again.", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
     func getTweets() {
         if let searchText = twitterTextField.text {
             swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, metadata) in
@@ -67,6 +73,8 @@ class TwitterViewController: UIViewController {
                 self.predictSentiment(with: tweets)
             }) { (error) in
                 print("Twitter API Request error, \(error)")
+                self.removeSpinner()
+                self.showError()
             }
         }
     }
@@ -89,6 +97,8 @@ class TwitterViewController: UIViewController {
             showSentimentUI(with: sentimentScore)
         } catch {
             print("There was an error with prediction, \(error)")
+            self.removeSpinner()
+            self.showError()
         }
     }
     

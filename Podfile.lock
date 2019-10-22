@@ -1,16 +1,20 @@
 PODS:
+  - SwiftRichString (3.0.3)
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - SwiftRichString
   - SwiftyJSON
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
+    - SwiftRichString
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  SwiftRichString: 2aea7d0761f77f6ef234f6028cde761d7eef40e6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: a096fa8baee4c21a60822db8408d0a8fb5f41b2d
+PODFILE CHECKSUM: 2935699fa80614bd6fbcb9b653269058aa3fb41e
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.4

@@ -15,7 +15,7 @@ struct LearningMaterial: Decodable {
     
     enum Category: Decodable {
         case all
-        case vision
+        case ai
         case text
         case speech
     }
@@ -29,7 +29,7 @@ extension LearningMaterial.Category: RawRepresentable {
     init?(rawValue: RawValue) {
         switch rawValue {
         case "All": self = .all
-        case "Vision": self = .vision
+        case "AI": self = .ai
         case "Text": self = .text
         case "Speech": self = .speech
         default: return nil
@@ -39,7 +39,7 @@ extension LearningMaterial.Category: RawRepresentable {
     var rawValue: RawValue {
         switch self {
         case .all: return "All"
-        case .vision: return "Vision"
+        case .ai: return "AI"
         case .text: return "Text"
         case .speech: return "Speech"
         }
