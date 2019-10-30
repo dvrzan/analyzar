@@ -31,6 +31,7 @@ class TwitterViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         checkTwitterButton.isEnabled = false
         
         //Hide keyboard on tap
