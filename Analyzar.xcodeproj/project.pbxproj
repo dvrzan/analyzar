@@ -91,14 +91,14 @@
 		733103A92358F47100D6A46B /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = "Swifter-master/Swifter.xcodeproj"; sourceTree = "<group>"; };
 		733103BE2358FCA000D6A46B /* LearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnViewController.swift; sourceTree = "<group>"; };
 		733103C42359058000D6A46B /* LearningMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearningMaterial.swift; sourceTree = "<group>"; };
-		733103C6235917D400D6A46B /* learn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = learn.json; path = Analyzar/Other/learn.json; sourceTree = SOURCE_ROOT; };
+		733103C6235917D400D6A46B /* learn.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = learn.json; path = Analyzar/Helpers/learn.json; sourceTree = SOURCE_ROOT; };
 		733103C823591C7700D6A46B /* DetailLearnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLearnViewController.swift; sourceTree = "<group>"; };
 		7333E9672361F20800879097 /* MoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		7369C29A23206B8D00627600 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		7369C29C23206BD300627600 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
 		73A8AB912322C2F1008025EC /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
-		73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AnalyzarSentimentClassifier.mlmodel; path = Analyzar/Other/AnalyzarSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
+		73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AnalyzarSentimentClassifier.mlmodel; path = Analyzar/Helpers/AnalyzarSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		73A9BF0B2326FCF900EE1591 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
 		73A9BF0D2326FD7F00EE1591 /* APIKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKeys.swift; sourceTree = "<group>"; };
 		73BFA31B23186C6C009D7980 /* Analyzar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Analyzar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -166,13 +166,13 @@
 		73339A75236B531C0041154C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				73C0C52723676E57009FC5BF /* HowToViewController.swift */,
-				7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */,
-				73A8AB912322C2F1008025EC /* TwitterViewController.swift */,
 				73BFA32023186C6C009D7980 /* OnboardingViewController.swift */,
+				73A8AB912322C2F1008025EC /* TwitterViewController.swift */,
 				733103BE2358FCA000D6A46B /* LearnViewController.swift */,
 				733103C823591C7700D6A46B /* DetailLearnViewController.swift */,
 				7333E9672361F20800879097 /* MoreViewController.swift */,
+				73C0C52723676E57009FC5BF /* HowToViewController.swift */,
+				7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -188,10 +188,13 @@
 		73339A77236B53450041154C /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				733103C6235917D400D6A46B /* learn.json */,
 				73C0C51C236766E8009FC5BF /* Style.swift */,
 				73A9BF0D2326FD7F00EE1591 /* APIKeys.swift */,
 				7369C29A23206B8D00627600 /* Slide.swift */,
 				73BFA31E23186C6C009D7980 /* AppDelegate.swift */,
+				73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */,
+				73A9BF0B2326FCF900EE1591 /* APIKeys.plist */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -201,18 +204,6 @@
 			children = (
 			);
 			path = Extensions;
-			sourceTree = "<group>";
-		};
-		73339A79236B536E0041154C /* Other */ = {
-			isa = PBXGroup;
-			children = (
-				73EE2C2D23218C8900E46DDF /* Assets.xcassets */,
-				733103C6235917D400D6A46B /* learn.json */,
-				73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */,
-				73BFA32A23186C6E009D7980 /* Info.plist */,
-				73A9BF0B2326FCF900EE1591 /* APIKeys.plist */,
-			);
-			path = Other;
 			sourceTree = "<group>";
 		};
 		73BFA31223186C6C009D7980 = {
@@ -242,7 +233,8 @@
 				73339A75236B531C0041154C /* Controllers */,
 				73339A78236B53570041154C /* Extensions */,
 				73339A77236B53450041154C /* Helpers */,
-				73339A79236B536E0041154C /* Other */,
+				73EE2C2D23218C8900E46DDF /* Assets.xcassets */,
+				73BFA32A23186C6E009D7980 /* Info.plist */,
 			);
 			path = Analyzar;
 			sourceTree = "<group>";
