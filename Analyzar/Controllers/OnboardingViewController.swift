@@ -27,22 +27,6 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
         
-        let isDarkMode = UserDefaults.standard.bool(forKey: "isDarkMode")
-        
-        if isDarkMode == true {
-            if #available(iOS 13.0, *) {
-                overrideUserInterfaceStyle = .dark
-            } else {
-                // Fallback on earlier versions
-            }
-        } else {
-            if #available(iOS 13.0, *) {
-                overrideUserInterfaceStyle = .light
-            } else {
-                // Fallback on earlier versions
-            }
-        }
-        
     }
     
     func createSlides() -> [Slide] {
