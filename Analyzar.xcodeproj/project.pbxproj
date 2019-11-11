@@ -20,6 +20,8 @@
 		7333E96A2361F54E00879097 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */; };
 		7369C29B23206B8D00627600 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7369C29A23206B8D00627600 /* Slide.swift */; };
 		7369C29D23206BD300627600 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7369C29C23206BD300627600 /* Slide.xib */; };
+		73A3D0B42379B59F00610FEA /* String+RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3D0B32379B59F00610FEA /* String+RegEx.swift */; };
+		73A3D0BB2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3D0BA2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift */; };
 		73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8AB912322C2F1008025EC /* TwitterViewController.swift */; };
 		73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */; };
 		73A9BF0C2326FCF900EE1591 /* APIKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = 73A9BF0B2326FCF900EE1591 /* APIKeys.plist */; };
@@ -99,6 +101,8 @@
 		7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		7369C29A23206B8D00627600 /* Slide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slide.swift; sourceTree = "<group>"; };
 		7369C29C23206BD300627600 /* Slide.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Slide.xib; sourceTree = "<group>"; };
+		73A3D0B32379B59F00610FEA /* String+RegEx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+RegEx.swift"; sourceTree = "<group>"; };
+		73A3D0BA2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ActivitySpinner.swift"; sourceTree = "<group>"; };
 		73A8AB912322C2F1008025EC /* TwitterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitterViewController.swift; sourceTree = "<group>"; };
 		73A8ABB42322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = AnalyzarSentimentClassifier.mlmodel; path = Analyzar/Helpers/AnalyzarSentimentClassifier.mlmodel; sourceTree = SOURCE_ROOT; };
 		73A9BF0B2326FCF900EE1591 /* APIKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = APIKeys.plist; sourceTree = "<group>"; };
@@ -205,6 +209,8 @@
 		73339A78236B53570041154C /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				73A3D0B32379B59F00610FEA /* String+RegEx.swift */,
+				73A3D0BA2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -410,8 +416,10 @@
 				73A8ABB52322D96B008025EC /* AnalyzarSentimentClassifier.mlmodel in Sources */,
 				7333E96A2361F54E00879097 /* PrivacyPolicyViewController.swift in Sources */,
 				733103BF2358FCA000D6A46B /* LearnViewController.swift in Sources */,
+				73A3D0BB2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift in Sources */,
 				7333E9682361F20800879097 /* MoreViewController.swift in Sources */,
 				733103C923591C7700D6A46B /* DetailLearnViewController.swift in Sources */,
+				73A3D0B42379B59F00610FEA /* String+RegEx.swift in Sources */,
 				73339A92236B71350041154C /* HomeTabBarViewController.swift in Sources */,
 				73C0C51D236766E8009FC5BF /* Style.swift in Sources */,
 				73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */,

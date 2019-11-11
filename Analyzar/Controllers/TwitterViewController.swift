@@ -22,7 +22,6 @@ class TwitterViewController: UIViewController {
     }
     @IBOutlet weak var sentimentScoreLabel: UILabel!
     
-    
     let tweetCount = 100
     let sentimentClassifier = AnalyzarSentimentClassifier()
     
@@ -49,7 +48,7 @@ class TwitterViewController: UIViewController {
     }
     
     @IBAction func checkTwitterButtonPressed(_ sender: Any) {
-        self.showSpinner(onView: self.view)
+        showSpinner(onView: self.view)
         getTweets()
     }
     
@@ -94,11 +93,11 @@ class TwitterViewController: UIViewController {
                     sentimentScore -= 1
                 }
             }
-            self.removeSpinner()
+            removeSpinner()
             showSentimentUI(with: sentimentScore)
         } catch {
             print("There was an error with prediction, \(error)")
-            self.removeSpinner()
+            removeSpinner()
             self.showError()
         }
     }
@@ -134,37 +133,4 @@ class TwitterViewController: UIViewController {
         }
     }
     
-}
-
-extension String {
-    var isValidInput: Bool {
-        let checkUserInputRegex = "^[@][A-z0-9]+|^[#][A-z0-9]+"
-        return NSPredicate(format: "SELF MATCHES %@", checkUserInputRegex).evaluate(with: self)
-    }
-}
-
-var vSpinner : UIView?
-
-extension UIViewController {
-    func showSpinner(onView : UIView) {
-        let spinnerView = UIView.init(frame: onView.bounds)
-        spinnerView.backgroundColor = UIColor.init(red: 0.5, green: 0.5, blue: 0.5, alpha: 0.5)
-        let ai = UIActivityIndicatorView.init(style: .whiteLarge)
-        ai.startAnimating()
-        ai.center = spinnerView.center
-        
-        DispatchQueue.main.async {
-            spinnerView.addSubview(ai)
-            onView.addSubview(spinnerView)
-        }
-        
-        vSpinner = spinnerView
-    }
-    
-    func removeSpinner() {
-        DispatchQueue.main.async {
-            vSpinner?.removeFromSuperview()
-            vSpinner = nil
-        }
-    }
 }

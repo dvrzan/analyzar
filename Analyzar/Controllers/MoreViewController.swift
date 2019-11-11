@@ -17,7 +17,7 @@ class MoreViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         switchThemeButton.isOn = defaults.bool(forKey: "isDarkMode")
-        isDarkMode()
+        switchThemeButtonValueChanged(switchThemeButton)
     }
     
     @IBAction func switchThemeButtonValueChanged(_ sender: UISwitch) {
@@ -27,14 +27,18 @@ class MoreViewController: UITableViewController {
     func isDarkMode() {
         if switchThemeButton.isOn == true {
             if #available(iOS 13.0, *) {
-                overrideUserInterfaceStyle = .dark
+                UIApplication.shared.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .dark
+                }
             } else {
                 // Fallback on earlier versions
             }
             defaults.set(true, forKey: "isDarkMode")
         } else {
             if #available(iOS 13.0, *) {
-                overrideUserInterfaceStyle = .light
+                UIApplication.shared.windows.forEach { window in
+                    window.overrideUserInterfaceStyle = .light
+                }
             } else {
                 // Fallback on earlier versions
             }
