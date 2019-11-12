@@ -43,15 +43,10 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "onboard3")
-        slide3.labelTitle.text = "Keep track"
-        slide3.labelDescription.text = "Search history shows you how fast opinions change."
+        slide3.labelTitle.text = "Learn"
+        slide3.labelDescription.text = "A simple introduction for those who always wanted to understand machine learning."
         
-        let slide4:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
-        slide4.imageView.image = UIImage(named: "onboard4")
-        slide4.labelTitle.text = "Learn"
-        slide4.labelDescription.text = "All while having fun! Ever wondered how machines learn?"
-        
-        return [slide1, slide2, slide3, slide4]
+        return [slide1, slide2, slide3]
     }
     
     func setupSlideScrollView(slides : [Slide]) {
