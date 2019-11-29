@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		652EBBE4C008B5030500C255 /* Pods_Analyzar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C17BDF8A9E219A873306FA1 /* Pods_Analyzar.framework */; };
 		7311E8AE23197F58008970C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7311E8AC23197F58008970C2 /* Main.storyboard */; };
 		733103BB2358F49600D6A46B /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 733103B42358F47100D6A46B /* SwifteriOS.framework */; };
 		733103BC2358F49600D6A46B /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 733103B42358F47100D6A46B /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -20,6 +19,7 @@
 		7333E96A2361F54E00879097 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */; };
 		7369C29B23206B8D00627600 /* Slide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7369C29A23206B8D00627600 /* Slide.swift */; };
 		7369C29D23206BD300627600 /* Slide.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7369C29C23206BD300627600 /* Slide.xib */; };
+		7384A0F22391A76C004B79E6 /* Pods_Analyzar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C17BDF8A9E219A873306FA1 /* Pods_Analyzar.framework */; };
 		73A3D0B42379B59F00610FEA /* String+RegEx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3D0B32379B59F00610FEA /* String+RegEx.swift */; };
 		73A3D0BB2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A3D0BA2379B5EA00610FEA /* UIViewController+ActivitySpinner.swift */; };
 		73A8AB922322C2F1008025EC /* TwitterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A8AB912322C2F1008025EC /* TwitterViewController.swift */; };
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				652EBBE4C008B5030500C255 /* Pods_Analyzar.framework in Frameworks */,
+				7384A0F22391A76C004B79E6 /* Pods_Analyzar.framework in Frameworks */,
 				733103BB2358F49600D6A46B /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +573,7 @@
 			baseConfigurationReference = 53C6B476B8F7463ACDFB9B0C /* Pods-Analyzar.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
 				INFOPLIST_FILE = Analyzar/Info.plist;
@@ -582,6 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.Analyzar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -592,6 +594,7 @@
 			baseConfigurationReference = 4481A37A22E5AB1D67B1133C /* Pods-Analyzar.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
 				INFOPLIST_FILE = Analyzar/Info.plist;
@@ -601,6 +604,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.danijelavrzan.Analyzar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

@@ -22,12 +22,20 @@
                                     <constraint firstAttribute="width" secondItem="oeG-Ge-e6J" secondAttribute="height" multiplier="16:9" id="FVh-Nv-9N2"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ANALYZAR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WAz-vP-EGH">
+                                <rect key="frame" x="118.66666666666669" y="225" width="138" height="35.666666666666686"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.59215686270000001" green="0.027450980390000001" blue="0.2784313725" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.99576765300000003" green="0.92015868430000003" blue="0.49371433260000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="oeG-Ge-e6J" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" id="B9h-iV-vxo"/>
+                            <constraint firstItem="WAz-vP-EGH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="LBq-T2-CqV"/>
                             <constraint firstItem="oeG-Ge-e6J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="Soe-wa-udY"/>
                             <constraint firstItem="oeG-Ge-e6J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="eaK-iA-3Q2"/>
+                            <constraint firstItem="oeG-Ge-e6J" firstAttribute="top" secondItem="WAz-vP-EGH" secondAttribute="bottom" constant="40" id="gLy-tD-v5w"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
