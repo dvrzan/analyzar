@@ -39,7 +39,7 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         let slide2:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide2.imageView.image = UIImage(named: "onboard2")
         slide2.labelTitle.text = "Topic or Person"
-        slide2.labelDescription.text = "Use #topic or @person to search Twitter for opinions."
+        slide2.labelDescription.text = "Use #topic or @person to search Twitter and analyze opinions."
         
         let slide3:Slide = Bundle.main.loadNibNamed("Slide", owner: self, options: nil)?.first as! Slide
         slide3.imageView.image = UIImage(named: "onboard3")

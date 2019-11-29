@@ -1,5 +1,5 @@
 //
-//  StyleController.swift
+//  Style.swift
 //  Analyzar
 //
 //  Created by Danijela Vrzan on 2019-10-22.
@@ -9,7 +9,7 @@
 import Foundation
 import SwiftRichString
 
-let baseFontSize: CGFloat = 16
+let baseFontSize: CGFloat = 15
 
 let boldStyle = Style {
     $0.font = UIFont.boldSystemFont(ofSize: baseFontSize)
@@ -35,7 +35,7 @@ let style = StyleGroup(base: Style {
         // Fallback on earlier versions
         //Remain black - no Dark Mode
     }
-    $0.font = UIFont.systemFont(ofSize: baseFontSize)
+    $0.font = SystemFonts.HelveticaNeue.font(size: baseFontSize)
     $0.lineSpacing = 2
     }, [
         "strong": boldStyle,
@@ -47,7 +47,7 @@ let style = StyleGroup(base: Style {
             $0.headIndent = baseFontSize * 1.71
         },
         "superscript": Style {
-            $0.font = UIFont.systemFont(ofSize: baseFontSize / 1.2)
+            $0.font = SystemFonts.HelveticaNeue.font(size: baseFontSize / 1.2)
             $0.baselineOffset = Float(baseFontSize) / 3.5
         },
         "subLabel": Style {
@@ -61,7 +61,7 @@ let style = StyleGroup(base: Style {
         },
         "h1": Style {
             $0.alignment = .center
-            $0.font = UIFont.systemFont(ofSize: baseFontSize * 1.2)
+            $0.font = SystemFonts.HelveticaNeue.font(size: baseFontSize * 1.2)
         }
 ])
 
