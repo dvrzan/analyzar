@@ -30,7 +30,6 @@
 		73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73BFA32023186C6C009D7980 /* OnboardingViewController.swift */; };
 		73BFA32923186C6E009D7980 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73BFA32723186C6E009D7980 /* LaunchScreen.storyboard */; };
 		73C0C51D236766E8009FC5BF /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C51C236766E8009FC5BF /* Style.swift */; };
-		73C0C52823676E57009FC5BF /* HowToViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73C0C52723676E57009FC5BF /* HowToViewController.swift */; };
 		73EE2C2E23218C8900E46DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73EE2C2D23218C8900E46DDF /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -113,7 +112,6 @@
 		73BFA32823186C6E009D7980 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		73BFA32A23186C6E009D7980 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73C0C51C236766E8009FC5BF /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		73C0C52723676E57009FC5BF /* HowToViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToViewController.swift; sourceTree = "<group>"; };
 		73EE2C2D23218C8900E46DDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -177,7 +175,6 @@
 				733103BE2358FCA000D6A46B /* LearnViewController.swift */,
 				733103C823591C7700D6A46B /* DetailLearnViewController.swift */,
 				7333E9672361F20800879097 /* MoreViewController.swift */,
-				73C0C52723676E57009FC5BF /* HowToViewController.swift */,
 				7333E9692361F54E00879097 /* PrivacyPolicyViewController.swift */,
 				73339A91236B71350041154C /* HomeTabBarViewController.swift */,
 			);
@@ -426,7 +423,6 @@
 				7369C29B23206B8D00627600 /* Slide.swift in Sources */,
 				73BFA32123186C6C009D7980 /* OnboardingViewController.swift in Sources */,
 				73BFA31F23186C6C009D7980 /* AppDelegate.swift in Sources */,
-				73C0C52823676E57009FC5BF /* HowToViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,6 +571,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
 				INFOPLIST_FILE = Analyzar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -596,6 +593,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = 9G3SM93N6Z;
 				INFOPLIST_FILE = Analyzar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

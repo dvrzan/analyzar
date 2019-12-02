@@ -497,7 +497,7 @@ Made with ❤️ &amp; ☕️ in Toronto, CA</string>
         <!--HowTo-->
         <scene sceneID="CfT-di-7NT">
             <objects>
-                <viewController title="HowTo" modalPresentationStyle="fullScreen" id="uYd-uK-D85" customClass="HowToViewController" customModule="Analyzar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="HowTo" modalPresentationStyle="fullScreen" id="uYd-uK-D85" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aPq-4R-8Yh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -526,10 +526,10 @@ Made with ❤️ &amp; ☕️ in Toronto, CA</string>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <mutableString key="content">
+                                                        <string key="content">
 Twitter is an American microblogging and social networking service on which users post and interact with messages known as “tweets”. Registered users can post, like, and retweet tweets, but unregistered users can only read them. Users access Twitter through its website interface, through SMS or its mobile-device application software.
 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
@@ -598,13 +598,13 @@ If you are interested in how people feel about a specific topic, use </string>
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <mutableString key="content">and write a tag name in the text field.
+                                                        <string key="content">and write a tag name in the text field.
 
 By pressing the Check button, Analyzar analyzes sentiment for you and presents you with a result.
 
 Text field instantly validates your entry. If you did not provide a handle or have used invalid characters you will not be able to press the button, until you correct your entry.
 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <font key="NSFont" size="15" name="HelveticaNeue"/>
@@ -620,7 +620,7 @@ Text field instantly validates your entry. If you did not provide a handle or ha
                                                         </attributes>
                                                     </fragment>
                                                     <fragment>
-                                                        <mutableString key="content">
+                                                        <string key="content">
 There are 3 different labels in which tweets are categorized:
 
  ● For every positive label, +1 is added to the total score.
@@ -629,7 +629,7 @@ There are 3 different labels in which tweets are categorized:
 
 The final score is presented with an emoji.
 
-</mutableString>
+</string>
                                                         <attributes>
                                                             <color key="NSColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                                             <font key="NSFont" size="15" name="HelveticaNeue"/>

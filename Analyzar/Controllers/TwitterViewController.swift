@@ -108,7 +108,7 @@ class TwitterViewController: UIViewController {
             self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nTrue love knows no boundaries."
         } else if sentimentScore > 20 {
             self.twitterSentimentLabel.text = "😍"
-            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nThe positivity is though the roof!"
+            self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nThe positivity is through the roof!"
         } else if sentimentScore > 10 {
             self.twitterSentimentLabel.text = "😃"
             self.sentimentScoreLabel.text = "Final score is \(sentimentScore). \nPeople can't stop talking about it."
