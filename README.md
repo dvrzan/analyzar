@@ -4,6 +4,8 @@
 
 ## About the app
 
+![App Preview](Documentation/app-preview.gif)
+
 ### Analyzar and Twitter
 
 Analyzar uses Twitter API to fetch 100 most recent tweets from Twitter, currently only in English language.
