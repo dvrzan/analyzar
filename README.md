@@ -4,7 +4,9 @@
 
 ## About the app
 
-<div style="text-align:center"><img src="Documentation/app-preview-screen.gif" /></div>
+<p align="center">
+  <img src="Documentation/analyzar-preview-app.gif">
+</p>
 
 ### Analyzar and Twitter
 
