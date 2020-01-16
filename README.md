@@ -4,7 +4,7 @@
 
 ## About the app
 
-![App Preview](Documentation/app-preview-screen.gif)
+<div style="text-align:center"><img src="Documentation/app-preview-screen.gif" /></div>
 
 ### Analyzar and Twitter
 
