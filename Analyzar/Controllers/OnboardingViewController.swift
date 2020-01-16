@@ -27,6 +27,8 @@ class OnboardingViewController: UIViewController, UIScrollViewDelegate {
         pageControl.currentPage = 0
         view.bringSubviewToFront(pageControl)
         
+        scrollView.showsHorizontalScrollIndicator = false
+        
     }
     
     func createSlides() -> [Slide] {
