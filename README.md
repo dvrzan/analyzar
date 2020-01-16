@@ -2,8 +2,6 @@
 
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey) ![Swift](https://img.shields.io/badge/Swift%20Version-5.1-blue)
 
-#  Analyzar
-
 ## About the app
 
 ### Analyzar and Twitter
@@ -58,7 +56,11 @@ The final score is presented with an emoji.
 * In-app dark mode switch using UserDefaults
 * Privacy Policy view using WebKit
 
+ <br />
+ <br />
 
->This is a learning project created by expanding Bachelor's Thesis application and implementing different Swift components. Check my portfolio at [dvrzan.github.io/portfolio/](https://dvrzan.github.io/portfolio/)
+>This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. Check my portfolio at [dvrzan.github.io/portfolio/](https://dvrzan.github.io/portfolio/)
+
+ <br />
 
 ![End Banner](Documentation/EndBanner.png)
