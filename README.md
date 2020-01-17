@@ -63,7 +63,7 @@ The final score is presented with an emoji.
  <br />
  <br />
 
->This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io)
+>This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
 
  <br />
 
