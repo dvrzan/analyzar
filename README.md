@@ -1,7 +1,5 @@
 ![Front Banner](Documentation/FrontBanner.png)
 
-![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey) ![Swift](https://img.shields.io/badge/Swift%20Version-5.1-blue)
-
 ## About the app
 
 <p align="center">
