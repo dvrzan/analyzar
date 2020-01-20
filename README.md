@@ -3,7 +3,7 @@
 ## About the app
 
 <p align="center">
-  <img src="Documentation/analyzar-preview-app.gif">
+  <img src="Documentation/preview.gif">
 </p>
 
 ### Analyzar and Twitter
