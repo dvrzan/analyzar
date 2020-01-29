@@ -79,7 +79,7 @@ Also check for any external libraries you might need to install.
 <br />
 <br />
 
->This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. 
+>This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components.</br>
 >Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
 
 <br />
