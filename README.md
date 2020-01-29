@@ -35,7 +35,7 @@ There are 3 different labels in which tweets are categorized:
 The final score is presented with an emoji.
 
 |      | Score range breakdown     |
-|---    |---------------------------------------------------------------------------------    |
+|---    |---   |
 | ❤️     | > 50     |
 | 😍     | > 20     |
 | 😃     | > 10     |
@@ -66,17 +66,19 @@ The final score is presented with an emoji.
 * Privacy Policy view using WebKit
 * Fully ready App Store app
 
+---
+
 ### Dependencies
 
 To successfully run the application on your machine you need to Sign up as a Twitter Developer and get the API keys.
-Create a new plist file called **APIKeys.plist** with 2 keys and assign those values to **API_KEY** and **API_SECRET_KEY**. 
-Also check for any third-party libraries you might need to install.
+Create a new plist file called **APIKeys.plist** with 2 keys and assign those values to **API_KEY** and **API_SECRET_KEY**.   
+Also check for any external libraries you might need to install.   
+   
+      
 
- <br />
- <br />
-
->This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
-
- <br />
-
+>This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. 
+>Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
+   
+   
+   
 ![End Banner](Documentation/EndBanner.png)
