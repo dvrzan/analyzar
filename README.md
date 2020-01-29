@@ -73,12 +73,15 @@ The final score is presented with an emoji.
 To successfully run the application on your machine you need to Sign up as a Twitter Developer and get the API keys.
 Create a new plist file called **APIKeys.plist** with 2 keys and assign those values to **API_KEY** and **API_SECRET_KEY**.   
 Also check for any external libraries you might need to install.   
-   
-      
+
+---
+
+<br />
+<br />
 
 >This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components. 
 >Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
-   
-   
+
+<br />
    
 ![End Banner](Documentation/EndBanner.png)
