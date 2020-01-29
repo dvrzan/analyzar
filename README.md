@@ -2,8 +2,14 @@
 
 ## About the app
 
+### App preview
+
 <p align="center">
   <img src="Documentation/preview.gif">
+</p>
+
+<p align="center">
+<img src="Documentation/screenshots.png">
 </p>
 
 ### Analyzar and Twitter
@@ -51,12 +57,20 @@ The final score is presented with an emoji.
     * [Swifter](https://github.com/mattdonnelly/Swifter)
     * [SwiftRichString](https://github.com/malcommac/SwiftRichString)
 * JSON parsing using Codable
+* HTTP requests with URLSession
 * Getting data from Twitter API
 * Searchbar advanced filtering options
 * Regular expressions for checking correct user input
-* Activity spinner using GCD
-* In-app dark mode switch using UserDefaults
+* Activity spinner using DispatchQueue
+* In-app dark mode switch with UserDefaults
 * Privacy Policy view using WebKit
+* Fully ready App Store app
+
+### Dependencies
+
+To successfully run the application on your machine you need to Sign up as a Twitter Developer and get the API keys.
+Create a new plist file called **APIKeys.plist** with 2 keys and assign those values to **API_KEY** and **API_SECRET_KEY**. 
+Also check for any third-party libraries you might need to install.
 
  <br />
  <br />
