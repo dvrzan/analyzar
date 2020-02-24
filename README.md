@@ -2,8 +2,6 @@
 
 ## About the app
 
-### App preview
-
 <p align="center">
   <img src="Documentation/preview.gif">
 </p>
