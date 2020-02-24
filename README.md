@@ -8,10 +8,6 @@
   <img src="Documentation/preview.gif">
 </p>
 
-<p align="center">
-<img src="Documentation/screenshots.png">
-</p>
-
 ### Analyzar and Twitter
 
 Analyzar uses Twitter API to fetch 100 most recent tweets from Twitter, currently only in English language.
@@ -76,11 +72,16 @@ Also check for any external libraries you might need to install.
 
 ---
 
+### TO-DO:
+
+- [ ] Refactor code to support MVC Design Pattern
+- [ ] Refactor to remove SwiftyJSON and Alamofire
+
 <br />
 <br />
 
 >This is a learning project created by expanding my Bachelor's Thesis application and implementing different Swift components.</br>
->Check my portfolio at [dvrzan.github.io](https://dvrzan.github.io).
+>Check my portfolio at [danijelavrzan.com](https://danijelavrzan.com).
 
 <br />
    
