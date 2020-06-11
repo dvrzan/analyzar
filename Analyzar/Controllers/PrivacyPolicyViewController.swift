@@ -23,7 +23,7 @@ class PrivacyPolicyViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let policyURL = URL(string:"https://anijelavrzan.com/analyzar-privacy-policy.html")
+        let policyURL = URL(string:"https://danijelavrzan.com/projects/analyzar-privacy-policy.html")
         let policyRequest = URLRequest(url: policyURL!)
         webView.load(policyRequest)
         
